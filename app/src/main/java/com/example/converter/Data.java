@@ -15,7 +15,6 @@ import android.widget.Toast;
 import java.text.DecimalFormat;
 
 public class Data extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
-    //
 
     private Button back,submit,reset;
     private TextView input,h,gh,mh,kh;
@@ -77,9 +76,7 @@ public class Data extends AppCompatActivity implements AdapterView.OnItemSelecte
                 startActivity(new Intent(Data.this,Length.class));
             }
         });
-
     }
-
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
          value=parent.getItemAtPosition(position).toString();
@@ -144,5 +141,4 @@ public class Data extends AppCompatActivity implements AdapterView.OnItemSelecte
             Toast.makeText(this, "Please Enter Value", Toast.LENGTH_SHORT).show();
         }
     }
-
 }
